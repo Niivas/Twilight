@@ -27,14 +27,15 @@ const siteProps = {
   name: "Nivas Reddy Nalla",
   title: "Software Engineer & Web developer",
   email: "nivas6900@gmail.com",
-  gitHub: "https://github.com/Niivas",
+  gitHub: "Niivas",
   instagram: "",
-  linkedIn: "https://linkedin.com/in/nivasrn",
+  linkedIn: "nivasrn",
   medium: "",
   twitter: "",
   youTube: "",
-  leetcode: "https://leetcode.com/nivas6900",
-  hackerrank: "https://hackerrank.com/nivas6900",
+  leetcode: "Tw1light",
+  hackerrank: "nivas6900",
+  scaler: "c847902a2257",
 };
 
 const primaryColor = "#4E567E";

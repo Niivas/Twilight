@@ -18,6 +18,9 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import leetcodeIcon from "../images/socials/leetcode.svg";
+import hackerrankIcon from "../images/socials/hackerrank.svg";
+import scalerIcon from "../images/socials/scaler.svg";
 
 /**
  * 💡 Learning resources
@@ -38,6 +41,9 @@ const Footer = (props) => {
     primaryColor,
     twitter,
     youTube,
+    leetcode,
+    hackerrank,
+    scaler,
   } = props;
 
   return (
@@ -91,6 +97,29 @@ const Footer = (props) => {
             rel="noopener noreferrer"
           >
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+          </a>
+        )}
+        {leetcode && (
+          <a href={`https://leetcode.com/${leetcode}`} target="_blank" rel="noopener noreferrer">
+            <img src={leetcodeIcon} alt="Leetcode" className="socialIcon" />
+          </a>
+        )}
+        {scaler && (
+          <a
+            href={`https://www.scaler.com/academy/profile/${scaler}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={scalerIcon} alt="Scaler" className="socialIcon" />
+          </a>
+        )}
+        {hackerrank && (
+          <a
+            href={`https://www.hackerrank.com/${hackerrank}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={hackerrankIcon} alt="Hackerrank" className="socialIcon" />
           </a>
         )}
         {medium && (
