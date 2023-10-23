@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/paperclip-background.jpg";
+import image from "../images/design-desk.jpeg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -32,11 +32,11 @@ const description =
  */
 const skillsList = [
   "Backend development",
-  "Frontend development",
+  "Microservices",
   "MERN stack",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Unit testing",
+  "Agile methodology",
+  "AWS",
 ];
 
 /**
@@ -45,7 +45,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I'm passionate about learning new technologies and building scalable applications. I'm a team player and I love to work in a team. I'm a quick learner and I'm always ready to learn new things.";
 
 const About = () => {
   return (
