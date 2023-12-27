@@ -7,20 +7,20 @@
  *
  * If a social value has an empty string it will not be displayed.
  */
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import devDotToIcon from "../images/socials/devdotto.svg";
-import envelopeIcon from "../images/socials/envelope.svg";
-import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
-import linkedInIcon from "../images/socials/linkedin.svg";
-import mediumIcon from "../images/socials/medium.svg";
-import twitterIcon from "../images/socials/twitter.svg";
-import youTubeIcon from "../images/socials/youtube.svg";
-import leetcodeIcon from "../images/socials/leetcode.svg";
-import hackerrankIcon from "../images/socials/hackerrank.svg";
-import scalerIcon from "../images/socials/scaler.svg";
+import devDotToIcon from '../images/socials/devdotto.svg'
+import envelopeIcon from '../images/socials/envelope.svg'
+import gitHubIcon from '../images/socials/github.svg'
+import instagramIcon from '../images/socials/instagram.svg'
+import linkedInIcon from '../images/socials/linkedin.svg'
+import mediumIcon from '../images/socials/medium.svg'
+import twitterIcon from '../images/socials/twitter.svg'
+import youTubeIcon from '../images/socials/youtube.svg'
+import leetcodeIcon from '../images/socials/leetcode.svg'
+import hackerrankIcon from '../images/socials/hackerrank.svg'
+import scalerIcon from '../images/socials/scaler.svg'
 
 /**
  * 💡 Learning resources
@@ -43,115 +43,115 @@ const Footer = (props) => {
     youTube,
     leetcode,
     hackerrank,
-    scaler,
-  } = props;
+    scaler
+  } = props
 
   return (
     <div
-      id="footer"
+      id='footer'
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '2.5rem',
+        padding: '5rem 0 3rem',
         backgroundColor: primaryColor,
-        width: "100vw",
+        width: '100vw'
       }}
     >
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "2.5rem",
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '2.5rem'
         }}
       >
         {email && (
           <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
+            <img src={envelopeIcon} alt='email' className='socialIcon' />
           </a>
         )}
         {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
+          <a href={`https://dev.to/${devDotTo}`} target='_blank' rel='noopener noreferrer'>
+            <img src={devDotToIcon} alt='Dev.to' className='socialIcon' />
           </a>
         )}
         {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-            <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
+          <a href={`https://github.com/${gitHub}`} target='_blank' rel='noopener noreferrer'>
+            <img src={gitHubIcon} alt='GitHub' className='socialIcon' />
           </a>
         )}
         {instagram && (
           <a
             href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
+            <img src={instagramIcon} alt='Instagram' className='socialIcon' />
           </a>
         )}
         {linkedIn && (
           <a
             href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+            <img src={linkedInIcon} alt='LinkedIn' className='socialIcon' />
           </a>
         )}
         {leetcode && (
-          <a href={`https://leetcode.com/${leetcode}`} target="_blank" rel="noopener noreferrer">
-            <img src={leetcodeIcon} alt="Leetcode" className="socialIcon" />
+          <a href={`https://leetcode.com/${leetcode}`} target='_blank' rel='noopener noreferrer'>
+            <img src={leetcodeIcon} alt='Leetcode' className='socialIcon' />
           </a>
         )}
         {scaler && (
           <a
             href={`https://www.scaler.com/academy/profile/${scaler}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={scalerIcon} alt="Scaler" className="socialIcon" />
+            <img src={scalerIcon} alt='Scaler' className='socialIcon' />
           </a>
         )}
         {hackerrank && (
           <a
             href={`https://www.hackerrank.com/${hackerrank}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={hackerrankIcon} alt="Hackerrank" className="socialIcon" />
+            <img src={hackerrankIcon} alt='Hackerrank' className='socialIcon' />
           </a>
         )}
         {medium && (
-          <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img src={mediumIcon} alt="Medium" className="socialIcon" />
+          <a href={`https://medium.com/@${medium}`} target='_blank' rel='noopener noreferrer'>
+            <img src={mediumIcon} alt='Medium' className='socialIcon' />
           </a>
         )}
         {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
+          <a href={`https://twitter.com/${twitter}`} target='_blank' rel='noopener noreferrer'>
+            <img src={twitterIcon} alt='Twitter' className='socialIcon' />
           </a>
         )}
         {youTube && (
           <a
             href={`https://www.youtube.com/c/${youTube}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
+            <img src={youTubeIcon} alt='YouTube' className='socialIcon' />
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p className='small' style={{ marginTop: 0, color: 'white' }}>
         Created by {name}
       </p>
     </div>
-  );
-};
+  )
+}
 
 Footer.defaultProps = {
-  name: "",
-};
+  name: ''
+}
 
 Footer.propTypes = {
   devDotTo: PropTypes.string,
@@ -163,7 +163,7 @@ Footer.propTypes = {
   name: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
-  youTube: PropTypes.string,
-};
+  youTube: PropTypes.string
+}
 
-export default Footer;
+export default Footer
